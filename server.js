@@ -354,7 +354,6 @@ io.on('connection', (socket) => {
 
 app.get('/', (req, res) => {
   res.send('Attendance API Running');
-  res.send(seedData());
 });
 
 const PORT = process.env.PORT || 5000;
