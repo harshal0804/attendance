@@ -21,7 +21,7 @@ const io = socketio(server, {
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/attendance_system', {
+mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://unnmil100rs:unnmilrandi@cluster0.txvfqkh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log('MongoDB connected'))
